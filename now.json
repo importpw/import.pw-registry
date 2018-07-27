@@ -2,6 +2,14 @@
   "type": "docker",
   "public": true,
   "alias": "registry.import.pw",
+  "build": {
+    "env": {
+      "S3_ACCESS_KEY": "@importpw-registry-s3-access-key",
+      "S3_SECRET_KEY": "@importpw-registry-s3-secret-key",
+      "S3_REGION": "@importpw-registry-s3-region",
+      "S3_BUCKET": "@importpw-registry-s3-bucket"
+    }
+  },
   "env": {
     "REGISTRY_HTTP_SECRET": "@importpw-registry-secret"
   },

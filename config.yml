@@ -5,8 +5,11 @@ log:
 storage:
   cache:
     blobdescriptor: inmemory
-  filesystem:
-    rootdirectory: /var/lib/registry
+  s3:
+    accesskey: "S3_ACCESS_KEY"
+    secretkey: "S3_SECRET_KEY"
+    region: "S3_REGION"
+    bucket: "S3_BUCKET"
 http:
   addr: :5000
   headers:
