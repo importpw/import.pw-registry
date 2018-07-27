@@ -10,6 +10,10 @@ storage:
     secretkey: "S3_SECRET_KEY"
     region: "S3_REGION"
     bucket: "S3_BUCKET"
+auth:
+  htpasswd:
+    realm: basic-realm
+    path: /etc/htpasswd
 http:
   addr: :5000
   headers:

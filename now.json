@@ -4,6 +4,8 @@
   "alias": "registry.import.pw",
   "build": {
     "env": {
+      "REGISTRY_AUTH_USERNAME": "@importpw-registry-auth-username",
+      "REGISTRY_AUTH_PASSWORD": "@importpw-registry-auth-password",
       "S3_ACCESS_KEY": "@importpw-registry-s3-access-key",
       "S3_SECRET_KEY": "@importpw-registry-s3-secret-key",
       "S3_REGION": "@importpw-registry-s3-region",
