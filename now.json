@@ -1,4 +1,6 @@
 {
+  "type": "docker",
+  "alias": "registry.import.pw",
   "env": {
     "REGISTRY_HTTP_SECRET": "@importpw-registry-secret"
   },
