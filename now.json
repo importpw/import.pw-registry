@@ -1,0 +1,8 @@
+{
+  "env": {
+    "REGISTRY_HTTP_SECRET": "@importpw-registry-secret"
+  },
+  "features": {
+    "cloud": "v2"
+  }
+}
