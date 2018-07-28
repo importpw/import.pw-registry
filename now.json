@@ -1,6 +1,5 @@
 {
   "type": "docker",
-  "public": true,
   "alias": "registry.import.pw",
   "build": {
     "env": {
