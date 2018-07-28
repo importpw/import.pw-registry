@@ -11,9 +11,11 @@ storage:
     region: "S3_REGION"
     bucket: "S3_BUCKET"
 auth:
-  htpasswd:
-    realm: basic-realm
-    path: /etc/htpasswd
+  token:
+    realm: https://auth.import.pw/auth
+    service: "Docker registry"
+    issuer: "import.pw auth server"
+    rootcertbundle: "/etc/auth-cert.pem"
 http:
   addr: :5000
   headers:
